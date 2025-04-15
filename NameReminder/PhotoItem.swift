@@ -6,3 +6,17 @@
 //
 
 import Foundation
+
+
+import SwiftUI
+
+struct PhotoItem: Identifiable, Equatable {
+    let id = UUID()
+    var name: String
+    var uiImage: UIImage
+
+    var image: Image {
+        Image(uiImage: uiImage)
+    }
+}
+
